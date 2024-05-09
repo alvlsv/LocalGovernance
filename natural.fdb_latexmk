@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex natural"] 1715270748 "natural.aux" "natural.bbl" "natural" 1715273041
+["bibtex natural"] 1715284750 "natural.aux" "natural.bbl" "natural" 1715284933
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/econ-bst/econ.bst" 1641428422 84329 775197fa770094ab6e3ce9f5b1c240ec ""
-  "natural.aux" 1715273040 1982 775ad1666e39f0a0aaf188ed9f48976e "pdflatex"
+  "natural.aux" 1715284933 2719 d02d11bee79dfb7d9dd36c67c9c9b0e0 "pdflatex"
   "references.bib" 1715270724 2634 d93718b1aa571d8770d649cf008e8d73 ""
   (generated)
   "natural.bbl"
   "natural.blg"
-["pdflatex"] 1715273038 "/Users/vlasov/Documents/Техать тут!/MAE Natural Resourses/Project/natural.tex" "natural.pdf" "natural" 1715273041
-  "/Users/vlasov/Documents/Техать тут!/MAE Natural Resourses/Project/natural.tex" 1715273038 3817 b5e7a9540f91beb895e217eb9c80d3d7 ""
+["pdflatex"] 1715284931 "/Users/vlasov/Documents/Natural Resourse Econ Project/LocalGovernance/natural.tex" "natural.pdf" "natural" 1715284933
+  "/Users/vlasov/Documents/Natural Resourse Econ Project/LocalGovernance/natural.tex" 1715284931 8280 a7272d2b65d3deb99cfa5a278c19f8c3 ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1095.tfm" 1647688249 3336 216c27338cb0f11f0d2908d69ce3de23 ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1647089135 3308 eee81981029f67083258db36df06e523 ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1647688259 3312 d199be9bd555944e2403193d58a0256a ""
@@ -25,6 +25,7 @@
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/lati0700.tfm" 1664552373 3528 15a6f610d0057e691178d31f3f277358 ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1647089171 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/lati1200.tfm" 1647089162 3512 f3a56cfe95a159371df20f73d1eb107d ""
+  "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/latt1000.tfm" 1680457611 1272 55f67101730a20777decd892fb4b4e3e ""
   "/Users/vlasov/Library/texlive/2021/texmf-var/fonts/tfm/lh/lh-t2a/latt1200.tfm" 1663683758 1272 bf3bb5cc29880b269c8bcb412a1ac6e2 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -80,6 +81,7 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1215737283 139826 9213617a7cb78635fc326b859c0b2273 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1215737283 154599 ded6d7c21788a8930eadc7fef7518942 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb" 1215737283 164227 3df942b4ff2124425d8fb1b6d3e01c7a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1215737283 145929 f25e56369a345c4ff583b067cd87ce8e ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
@@ -87,6 +89,7 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb" 1215737283 131290 ea265c7de37664eae04a6f91a1f7a51f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb" 1215737283 186554 e8f0fa8ca05e038f257a06405232745f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb" 1215737283 198221 ca5aa71411090ef358a6cc78b7458365 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1215737283 169201 9ebf99020dde51a5086e186761a34e8f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb" 1215737283 167085 68de377d2744a68a88fa40a1f610615a ""
   "/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -332,13 +335,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1646577379 4410336 9a0a29906eb859c2474e81197df54e3a ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1646577410 2797749 81b5e45ac95007631cb34e1b4129a7cf ""
   "/usr/local/texlive/2021/texmf.cnf" 1646577368 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Figures/model_by_year_plot.pdf" 1715218105 16565 7c37787d8e9d8115d7b9c20cd3504483 ""
-  "Figures/ridgeplot_models.pdf" 1715267438 14694 249d892d59e9af6ed090134dc6c16dd2 ""
-  "Figures/ridgeplot_resourse_extraction_gdp.pdf" 1715267439 14415 de15822dc4152dbe078eb47793b2d044 ""
-  "natural.aux" 1715273040 1982 775ad1666e39f0a0aaf188ed9f48976e "pdflatex"
-  "natural.bbl" 1715270748 1063 d30f43f28b83adfbcf590d4feef24b5c "bibtex natural"
-  "natural.out" 1715273040 151 9090b650c43712cb61ac152865806b30 "pdflatex"
-  "natural.tex" 1715273038 3817 b5e7a9540f91beb895e217eb9c80d3d7 ""
+  "Figures/model_by_year_plot.pdf" 1715276022 16564 411a202253deba44240a33fec55cd117 ""
+  "Figures/ridgeplot_models.pdf" 1715276022 14693 570b73b00bf746be26239707e6680eb9 ""
+  "Figures/ridgeplot_resourse_extraction_gdp.pdf" 1715276564 14923 e0b8de24b0cd48e7dde93798f7feda47 ""
+  "natural.aux" 1715284933 2719 d02d11bee79dfb7d9dd36c67c9c9b0e0 "pdflatex"
+  "natural.bbl" 1715284750 1063 d30f43f28b83adfbcf590d4feef24b5c "bibtex natural"
+  "natural.out" 1715284933 307 f5c66076611d0b4cb9abb6b2d4b183a8 "pdflatex"
+  "natural.tex" 1715284931 8280 a7272d2b65d3deb99cfa5a278c19f8c3 ""
   "preamble.tex" 1714040026 3778 4ae88bf0a74c97acbabf88a5f943b763 ""
   (generated)
   "natural.aux"

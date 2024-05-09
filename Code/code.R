@@ -11,6 +11,7 @@ library(tidytable)
 library(tsibble)
 library(fable)
 library(forcats)
+library(readxl)
 
 library(here)
 i_am("code/code.R")
@@ -22,10 +23,17 @@ library(ggridges)
 
 library(stargazer)
 
+library(plm)
+
+library(lmtest)     # linear hypothesis tests
+library(sandwich)   # Sandwich estimator
+library(clubSandwich)   # Sandwich estimator
+
+
 # Dataset reading ----------
 
-consolidated_budget_raw <-
-  read_csv2("datasets/ConsolidatedBudgets/data.csv")
+#consolidated_budget_raw <-
+#  read_csv2("datasets/ConsolidatedBudgets/data.csv")
 
 
 
@@ -36,12 +44,6 @@ regional_gdp <-
     okato_region = substr(okato, start = 1, stop = 2)
   )
 
-
-articles <-
-  consolidated_budget |>
-  select(NAME, CODE) |>
-  group_by(NAME) |>
-  summarise(n = length(CODE), alltypes = paste(CODE, collapse = ", "), )
 
 
 
@@ -127,10 +129,7 @@ model_shares_region <-
 
 
 
-model_shares_region |> stargazer(
-  summary = T,
-  summary.stat = c("n", "min", "p25", "median", "mean", "sd", "p75", "max")
-)
+
 
 ### Ridge plot -----
 
@@ -173,7 +172,7 @@ ggsave(
 
 ## Regional GDP ----
 
-resourse_extraction_gdp
+
 
 gdp_pc <- regional_gdp |> filter(grepl("населения", indicator))
 
@@ -214,7 +213,7 @@ ridgeplot_resourse_extraction_gdp <-
     rel_min_height = 0.01,
     stat = "binline",
   ) +
-  scale_x_continuous("Log GDP due to natural resourses (Index, 2004 prices)", n.breaks =
+  scale_x_continuous("Log GDRP due to Natural Resource Extraction (Index, 2004 prices)", n.breaks =
                        5) +
   theme_ridges(font_size = 11,
                grid = TRUE,
@@ -256,6 +255,19 @@ regional_gdp |>
   select(-kind_of_activity,-id,-okato_region,-indicator,-okato,-units) |>
   mutate(gdp = as.numeric(value)) |> select(-value)
 
+
+
+construction_gdp <-
+  regional_gdp |>
+  filter(kind_of_activity == activities[14], grepl("постоянных", units)) |>
+  mutate(diff_construction_gdp = as.numeric(value) / 100) |>
+  select(-value, -indicator, -kind_of_activity, -okato, -id, -units) |>
+  na.omit() |>
+  group_by(territory) |>
+  mutate(
+    construction_gdp = cumprod(diff_construction_gdp),
+    log_construction_gdp = log(construction_gdp)
+  ) |> select(-diff_construction_gdp, -construction_gdp, -okato_region)
 
 
 
@@ -456,12 +468,15 @@ model_resourses_ts <-
   )
 
 
-
+stargazer(model_resourses_ts,
+  summary = T,
+  summary.stat = c("n", "min", "p25", "median", "mean", "sd", "p75", "max")
+)
 
 ggplot(model_resourses_ts,
        aes(x = log_resourse_gdp, y = share_elected / 100, color = year)) + geom_point() +
   theme_light() + scale_y_continuous("Share of Municipalities with Elected Mayor in a Region",
-                                     labels = scales::label_percent()) + labs(color = "Year", x = "Log GDP due to natural resourses (Index, 2004 prices)")
+                                     labels = scales::label_percent()) + labs(color = "Year", x = "Log GDRP due to Natural Resource Extraction (Index, 2004 prices)")
 
 
 
@@ -474,11 +489,6 @@ ggplot(model_resourses_ts,
 
 # Panel Methods ----
 #
-library(plm)
-
-library(lmtest)     # linear hypothesis tests
-library(sandwich)   # Sandwich estimator
-library(clubSandwich)   # Sandwich estimator
 
 model_0 <-
   plm(
@@ -556,7 +566,7 @@ stargazer(
     )$coefficients[, 2],
     summary(model_appointed_1, vcov. = vcovDC(model_appointed_1, type = "HC3"))$coefficients[, 2]
   ), 
-  df=F
+  df = F
 )
 
 summary(model_elected_1, vcov. = vcovDC(model_elected_1, type = "HC3"))
@@ -567,20 +577,3 @@ summary(model_elected_1)
 
 
 
-
-
-model_elected_2 <-
-  plm(
-    share_elected ~ log_resourse_gdp + log_energy_gdp + log_gdp + log(population) +
-      log_military_gdp + log_manufacturing_gdp +
-      log_healthcare_gdp + log_education_gdp  +
-      log_construction_gdp + log_aggriculture_gdp  + log_retail_gdp + log_transport_gdp +
-      log_hospitality_gdp |
-      oil_shock*lag(log_resourse_gdp,1) + oil_shock*lag(log_energy_gdp) + log_gdp + log(population) + log_military_gdp + log_manufacturing_gdp +
-      log_healthcare_gdp + log_education_gdp  +
-      log_construction_gdp + log_aggriculture_gdp  + log_retail_gdp + log_transport_gdp +
-      log_hospitality_gdp,
-    pdata.frame(model_resourses_ts, index = c("territory", "year_date")),
-    effect = "twoways"
-  )
- 

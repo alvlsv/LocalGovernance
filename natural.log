@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.6)  9 MAY 2024 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.6)  9 MAY 2024 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/vlasov/Documents/Техать тут!/MAE Natural Resourses/Project/natural.tex"
-(/Users/vlasov/Documents/Техать тут!/MAE Natural Resourses/Project/natural.tex
+**"/Users/vlasov/Documents/Natural Resourse Econ Project/LocalGovernance/natural.tex"
+(/Users/vlasov/Documents/Natural Resourse Econ Project/LocalGovernance/natural.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1009,7 +1009,14 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./natural.aux)
+ (./natural.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `@cref' multiply defined.
+
+)
 \openout1 = `natural.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -1184,69 +1191,75 @@ LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <5> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 14.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <5> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-
+LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <6> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 24.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
 
 pdfTeX warning: pdflatex (file ./Figures/model_by_year_plot.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/model_by_year_plot.pdf, id=17, 497.86pt x 350.30875pt>
+<Figures/model_by_year_plot.pdf, id=29, 497.86pt x 350.30875pt>
 File: Figures/model_by_year_plot.pdf Graphic file (type pdf)
 <use Figures/model_by_year_plot.pdf>
-Package pdftex.def Info: Figures/model_by_year_plot.pdf  used on input line 29.
-(pdftex.def)             Requested size: 483.69687pt x 340.34964pt.
+Package pdftex.def Info: Figures/model_by_year_plot.pdf  used on input line 35.
+(pdftex.def)             Requested size: 386.95897pt x 272.28291pt.
+[1
 
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 pdfTeX warning: pdflatex (file ./Figures/ridgeplot_models.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/ridgeplot_models.pdf, id=18, 497.86pt x 350.30875pt>
+<Figures/ridgeplot_models.pdf, id=49, 497.86pt x 350.30875pt>
 File: Figures/ridgeplot_models.pdf Graphic file (type pdf)
 <use Figures/ridgeplot_models.pdf>
-Package pdftex.def Info: Figures/ridgeplot_models.pdf  used on input line 34.
+Package pdftex.def Info: Figures/ridgeplot_models.pdf  used on input line 50.
 (pdftex.def)             Requested size: 483.69687pt x 340.34964pt.
 
 
 pdfTeX warning: pdflatex (file ./Figures/ridgeplot_resourse_extraction_gdp.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/ridgeplot_resourse_extraction_gdp.pdf, id=19, 497.86pt x 350.30875pt>
+<Figures/ridgeplot_resourse_extraction_gdp.pdf, id=50, 497.86pt x 350.30875pt>
 File: Figures/ridgeplot_resourse_extraction_gdp.pdf Graphic file (type pdf)
 <use Figures/ridgeplot_resourse_extraction_gdp.pdf>
-Package pdftex.def Info: Figures/ridgeplot_resourse_extraction_gdp.pdf  used on input line 40.
+Package pdftex.def Info: Figures/ridgeplot_resourse_extraction_gdp.pdf  used on input line 56.
 (pdftex.def)             Requested size: 483.69687pt x 340.34964pt.
-[1
+[2 <./Figures/model_by_year_plot.pdf> <./Figures/ridgeplot_models.pdf
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./natural.bbl
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 16.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
-) [3 <./Figures/model_by_year_plot.pdf>] [4 <./Figures/ridgeplot_models.pdf>] [5 <./Figures/ridgeplot_resourse_extraction_gdp.pdf>] (./natural.aux)
+pdfTeX warning: pdflatex (file ./Figures/ridgeplot_models.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [3] (./natural.bbl) [4 <./Figures/ridgeplot_resourse_extraction_gdp.pdf>] [5] (./natural.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `natural.out' has not changed.
-(rerunfilecheck)             Checksum: 9090B650C43712CB61AC152865806B30;151.
+(rerunfilecheck)             Checksum: F5C66076611D0B4CB9ABB6B2D4B183A8;307.
  ) 
 Here is how much of TeX's memory you used:
- 42924 strings out of 478276
- 962537 string characters out of 5846497
- 1422332 words of memory out of 5000000
- 60254 multiletter control sequences out of 15000+600000
- 503513 words of font info for 121 fonts, out of 8000000 for 9000
+ 42940 strings out of 478276
+ 962719 string characters out of 5846497
+ 1422681 words of memory out of 5000000
+ 60263 multiletter control sequences out of 15000+600000
+ 503823 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,14n,106p,821b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on natural.pdf (5 pages, 284380 bytes).
+ 104i,14n,106p,816b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on natural.pdf (5 pages, 329007 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
