@@ -566,7 +566,7 @@ stargazer(
     )$coefficients[, 2],
     summary(model_appointed_1, vcov. = vcovDC(model_appointed_1, type = "HC3"))$coefficients[, 2]
   ), 
-  df = F
+  df=F
 )
 
 summary(model_elected_1, vcov. = vcovDC(model_elected_1, type = "HC3"))
@@ -574,6 +574,34 @@ summary(model_elected_1)
 
 
 
+
+
+
+
+
+model_elected_2 <-
+  plm(
+    share_elected ~ log_resourse_gdp + log_energy_gdp + log_gdp + log(population) +
+      log_military_gdp + log_manufacturing_gdp +
+      log_healthcare_gdp + log_education_gdp  +
+      log_construction_gdp + log_aggriculture_gdp  + log_retail_gdp + log_transport_gdp +
+      log_hospitality_gdp |
+      oil_shock:lag(log_resourse_gdp,1) + log_energy_gdp + log_gdp + log(population) + log_military_gdp + log_manufacturing_gdp +
+      log_healthcare_gdp + log_education_gdp  +
+      log_construction_gdp + log_aggriculture_gdp  + log_retail_gdp + log_transport_gdp +
+      log_hospitality_gdp,
+    pdata.frame(model_resourses_ts, index = c("territory", "year_date")),
+    effect = "twoways"
+  )
+
+model_elected_2|> summary()
+ 
+first_stage_1 <- 
+  lm(log_resourse_gdp~oil_shock:lag(log_resourse_gdp,1) + log_energy_gdp + log_gdp + log(population) + log_military_gdp + log_manufacturing_gdp +
+  log_healthcare_gdp + log_education_gdp  +
+  log_construction_gdp + log_aggriculture_gdp  + log_retail_gdp + log_transport_gdp +
+  log_hospitality_gdp, model_resourses_ts)
+first_stage_1|> summary()
 
 
 
