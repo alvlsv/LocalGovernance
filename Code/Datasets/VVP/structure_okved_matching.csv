@@ -1,0 +1,4 @@
+field name,english description,russian description,measure,okei_code,format
+okved_version,,Версия ОКВЭД,,,varchar
+name_by_okved,,Наименование вида деятельности ОКВЭД / ОКВЭД-2,,,varchar
+generic_name,,Обобщенное наименование,,,varchar

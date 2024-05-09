@@ -1,0 +1,162 @@
+\usepackage{textcomp}
+\usepackage{cmap}				    	% поиск в PDF
+\usepackage{mathtext} 	           
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english]{babel}
+\usepackage[colorlinks=true,urlcolor=darkgray,citecolor=darkgray,linkcolor=darkgray,bookmarks=true]{hyperref}
+% \usepackage{ccaption}
+\usepackage{authblk}
+\usepackage{indentfirst}
+% \usepackage{float} 
+\usepackage{amsmath}
+\usepackage{apacite}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{upgreek} % AMS
+\usepackage{marvosym}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+\usepackage{cmap}	
+\usepackage{multirow}
+\usepackage{fullpage} 
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\usepackage{url}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usepackage{tikz} 
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{braket}
+% \usepackage[capposition=top]{floatrow}
+\usepackage{verbatim}
+% \usepackage[position=bottom]{subfig}
+\usepackage{graphicx}
+%\usefonttheme[onlymath]{serif}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{setspace}% Интерлиньяж
+\onehalfspacing % Интерлиньяж 1.5
+%\doublespacing % Интерлиньяж 2
+%\singlespacing % Интерлиньяж 1
+\usepackage{econometrics}
+
+
+\usepackage{appendix}
+
+
+
+\usepackage{hyperref}
+\usepackage{varioref}
+\usepackage{cleveref}
+\usepackage{fancyref}
+
+\usepackage{csquotes} 
+
+
+
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{intersections}
+\tikzset{
+style1/.style={
+line cap=round,line join=round,
+axis/.style={thick, ->, >=stealth'},
+l/.style={thin},
+d/.style={dashed, thin}, 
+pile/.style={thin, <->, >=stealth',shorten <=3pt, shorten >=3pt}, 
+every node/.style={color=black}, 
+}
+}
+
+
+
+
+
+% \usepackage[backend=biber,
+% style=chicago-authordate]{biblatex}
+% \addbibresource{references.bib}
+
+ \def\references{\bibliography{references.bib}
+ \bibliographystyle{econ}}
+
+
+
+\usepackage{parskip}
+
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{5pt}
+
+% \renewcommand{\maketitle}{\begin{center}
+%         \noindent{\bfseries\scshape\Large\@title} 
+%         \noindent{ \itshape\large\card{\subtitle}} 
+%         \par  \vspace{0.5ex}
+%         \noindent {\large\itshape\@author}
+%         \noindent{\card{\footnotesize \itshape \extratext}}
+%         \end{center}
+%         } 
+
+    % \makeatother
+    % \def\extratext{}
+    % \def\topic{}
+    % \def\subtitle{}
+       
+ \newcommand{\card}[1]{ \ifthenelse{\equal{#1}{}}{}{ {\par#1}}}
+
+ \usepackage{lipsum}
+
+ \makeatletter
+ \def\blfootnote{\gdef\@thefnmark{$\dagger$}\@footnotetext}
+ \makeatother
+
+
+
+
+    %%% Работа с картинками
+    \usepackage{graphicx}  % Для вставки рисунков
+    \setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+    \setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+    \usepackage{wrapfig} % Обтекание рисунков текстом
+    \usepackage{rotating}%поворот figure
+
+
+    \DeclareRobustCommand{\firstsecond}[2]{#1}
+
+
+    \makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+
+\usepackage{rotating}
+% \usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{labelfont=bf, labelsep=period, skip=0pt}
+
+
+\pagestyle{plain}

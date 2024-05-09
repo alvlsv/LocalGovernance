@@ -1,0 +1,7 @@
+﻿field name;english description;russian description;format
+region;Name of the region where city or district located;Наименование региона, в котором располагается МО;string
+municipality;Name of the city or district;Наименование МО;string
+oktmo;OKTMO identifier;Код ОКТМО МО;string
+mun_type;Type of municipal unit;Тип муниципального образования;string
+year;Year;Год;numeric
+model;Model of municipal chief-executive selection;Название используемой в МО модели избрания главы;string

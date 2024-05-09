@@ -1,0 +1,11 @@
+field name,english description,russian description,measure,okei_code,format
+id,,ID наблюдения,,,integer
+okato,,ОКАТО,,,varchar
+location,,"Территориальная единицаНапример, «Российская Федерация», «Центральный федеральный округ», «Курская область» и пр.",,,varchar
+indicator,,"ПоказательНапример, «Валовой региональный продукт на душу населения по субъектам Российской Федерации»",,,varchar
+okved_version,,Версия ОКВЭД,,,varchar
+okved_section,,"Раздел ОКВЭДНапример, «Раздел J»",,,varchar
+okved_name,,"Наименование раздела ОКВЭДНапример, «Финансовая деятельность»",,,varchar
+units,,Единицы,,,varchar
+year,,Год,,,integer
+value,,Значение,,,numeric
